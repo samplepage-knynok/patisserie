@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1170px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+a {
+    font-family: serif;
+    color: #222;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+p {
+    font-family: serif;
+    color: #222;
+}
+
+h2 {
+    font-family: serif;
+    color: #222;
+    font-size: 20px;
+    letter-spacing: 0.15em;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+/* ページ内リンク用 */
+#news {
+    padding-top: 70px;
+    margin-top: -70px;
+}
+
+#items {
+    padding-top: 70px;
+    margin-top: -70px;
+}
+
+#shop {
+    padding-top: 70px;
+    margin-top: -70px;
+}
+
+#contact {
+    padding-top: 70px;
+    margin-top: -70px;
+}
+
+/* ヘッダー */
+header {
+    height: 70px;
+    width: 100%;
+    background-color: white;
+    opacity: 0.9;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.hedder-logo {
+    height: 52px;
+    padding: 15px 0 0 40px;
+}
+
+
+.header-right {
+    float: right;
+    padding-right: 20px;
+}
+
+header a {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    margin: 0 20px;
+    line-height: 70px;
+}
+
+.ham-menu,hum-icon {
+    display: none;
+}
+
+
+/* トップラッパー */
+.top-wrapper {
+    padding-bottom: 40px;
+    border-bottom: double 4px #d3d3d3;
+}
+
+.top-wrapper p {
+    padding-top: 30px;
+    line-height: 35px;
+    font-size: 14px;
+}
+
+.top-photo {
+    vertical-align: bottom;
+    padding-top: 70px;
+    max-width: 100%;
+    height: auto;
+}
+
+.top-photo-s {
+    display: none;
+}
+
+/* ニュース */
+.news {
+    padding-bottom: 40px;
+    border-bottom: double 4px #d3d3d3;
+}
+
+.news-link {
+    line-height: 35px;
+    font-size: 14px;
+}
+
+/* アイテム */
+.items {
+    padding-bottom: 40px;
+    border-bottom: double 4px #d3d3d3;
+}
+
+
+
+.item-photo {
+    vertical-align: bottom;
+    width: 33.333%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+}
+
+.item-photo:nth-child(-n+4) {
+    padding-bottom: 3%;
+}
+
+
+.item-text01 {
+    padding-top: 30px;
+    line-height: 35px;
+    font-size: 14px;
+}
+
+
+.sub-title {
+    font-family: serif;
+    color: #222;
+    font-weight: bold;
+    font-size: 17px;
+    letter-spacing: 0.15em;
+    margin-top: 45px;
+}
+
+.item-text02 {
+    line-height: 35px;
+    font-size: 14px;
+}
+
+/* ショップ */
+.shop {
+    padding-bottom: 70px;
+    border-bottom: double 4px #d3d3d3;
+}
+
+.shop p {
+    padding-top: 30px;
+    line-height: 35px;
+    font-size: 14px;
+}
+
+.map {
+    text-align: center;
+}
+
+.iframe {
+    display: block;
+    max-width: 100%;
+}
+
+/* コンタクト */
+
+.contact-btn {
+    display: inline-block;
+    padding: 10px 50px;
+    border: solid 1px #222;
+    font-weight: bold;
+    font-size: 17px;
+    letter-spacing: 0.15em;
+    margin-top: 50px;
+}
+
+/* フッター */
+footer {
+    height: 50px;
+}
+
+
+footer p {
+    font-size: 10px;
+    padding-top: 20px;
+}
+
+footer i {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.fa-instagram {
+    margin-left: 3px;
+    margin-right: 3px;
+}
