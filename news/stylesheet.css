@@ -45,3 +45,17 @@ p {
     line-height: 35px;
     font-size: 14px;
 }
+
+
+
+
+/* スマホ向けレイアウト */
+@media all and (max-width: 900px) {
+    
+.container {
+    width: 80%;
+}
+
+.main {
+    text-align: left;
+}
