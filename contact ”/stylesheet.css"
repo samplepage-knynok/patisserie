@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    font-family: serif;
+    font-size: 20px;
+    letter-spacing: 0.15em;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.explanation {
+    font-family: serif;
+    line-height: 35px;
+    font-size: 14px;
+}
+
+.item-title {
+    font-family: serif;
+    font-size: 14px;
+    margin-top: 12px;
+    margin-bottom: 3px;
+}
+
+span {
+    font-size: 10px;
+}
+
+.contact-form {
+    margin-top: 35px;
+    margin-bottom: 70px;
+}
+
+.item-small {
+    
+}
+
+input {
+    height: 25px;
+    width: 400px;
+    border: solid 1px black;
+}
+
+textarea {
+    height: 120px;
+    width: 400px;
+    border: solid 1px black;
+    margin-bottom: 20px;
+}
+
+.submit-btn {
+    text-align: center;
+}
+
+input[type="submit"] {
+    font-family: serif;
+    font-size: 14px;
+    letter-spacing: 0.15em;
+    font-weight: bold;
+    border: double 4px #222;
+    background: #fff;
+    height: 45px;
+    width: 180px;
+    
+}
+
+
+
+
+/* スマホ向けレイアウト */
+@media all and (max-width: 900px) {
+    
+.container {
+    width: 80%;
+}
+
+input {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+}
+
+input[type="submit"] {
+}
