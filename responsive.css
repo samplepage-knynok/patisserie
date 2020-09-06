@@ -1,0 +1,157 @@
+/* スマホ向けレイアウト */
+@media all and (max-width: 900px) {
+    
+.header-right {
+    display: none;
+}
+
+.container {
+    width: 80%;
+}
+
+.top-photo {
+    display: none;
+}
+
+.top-photo-s {
+    display: block;
+    vertical-align: bottom;
+    padding-top: 70px;
+    max-width: 100%;
+    height: auto;
+}
+
+.top-wrapper p {
+    text-align: left;
+}
+
+.news-links {
+    text-align: left;
+}
+
+.items p {
+    text-align: left;
+}
+
+.shop p {
+    text-align: left;
+}
+
+footer p {
+    text-align: left;
+}
+
+.sns-links {
+    text-align: left;
+}
+
+.item-photo {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.item-photo:nth-child(-n+6) {
+    padding-bottom: 10%;
+}
+
+iframe {
+    width: 100%;
+}
+
+
+/* ハンバーガーメニュー用 */
+/*メニューリンクのスタイルを指定*/
+.ham-menu {
+    display: table; /*テーブル要素に変更（上下中央揃え用親要素）*/
+    text-align: center; /*テキストを中央揃え*/
+    
+    z-index: 2; /*重ね順を変更*/
+    
+    position: fixed; /*表示位置を固定*/
+    top: 0; /*表示位置を指定*/
+    left: 0; /*表示位置を指定*/
+    
+    background: #fff;/*背景を白にする*/
+    color: #222; /*文字色を黒にする*/
+    
+    height: 100%; /*全画面表示のため挿入*/
+    width: 100%; /*全幅表示*/
+    
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .6s ease, visibility .6s ease; /*アニメーションの時間を指定*/
+}
+
+.ham-menu ul {
+    display: table-cell; /*テーブルセル要素に変更（上下中央揃え用子要素）*/
+    vertical-align: middle; /*上下中央*/
+}
+
+.ham-menu ul li{
+    list-style-type: none;
+    color: #222;
+}
+
+.ham-menu ul li a{
+    display: block /*クリックできる領域を広げる*/
+}
+
+/*ハンバーガーボタンが押されたときに付与するクラス*/
+.ham-menu.active {
+    visibility: visible;
+    opacity: 1;
+}
+
+/*ハンバーガーボタンのスタイルを指定*/
+.hum-icon {
+    display: block;
+    position: fixed;    /* bodyに対しての絶対位置指定 */
+    right: 0px;
+    top: 0px;
+    width: 100px;
+    height: 70px;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.hum-icon span {
+    display: block;
+    position: absolute;
+    width: 30px;
+    border-bottom: solid 3px #222;
+    -webkit-transition: .35s ease-in-out;    /*変化の速度を指定*/
+    -moz-transition: .35s ease-in-out;        /*変化の速度を指定*/
+    transition: .35s ease-in-out;            /*変化の速度を指定*/
+    left: 35px;
+}
+
+.hum-icon span:nth-child(1) {
+    top: 25px;
+}
+
+.hum-icon span:nth-child(2) {
+    top: 35px;
+}
+
+.hum-icon span:nth-child(3) {
+    top: 45px;
+}
+
+/* 最初のspanをマイナス45度に */
+.hum-icon.active span:nth-child(1) {
+    top: 35px;
+    left: 35px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+/* 2番目と3番目のspanを45度に */
+.hum-icon.active span:nth-child(2),
+.hum-icon.active span:nth-child(3) {
+    top: 35px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
