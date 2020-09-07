@@ -77,8 +77,8 @@ input[type="submit"] {
 input, button, textarea {
 	-webkit-appearance: none;
 	-moz-appearance: none;
+	-webkit-border-radius : 0;
 	appearance: none;
-	border-radius : 0;
 }
 
 
