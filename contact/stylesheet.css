@@ -73,6 +73,12 @@ input[type="submit"] {
     
 }
 
+/* デフォルトスタイル削除 */
+input, button, textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
 
 
 
